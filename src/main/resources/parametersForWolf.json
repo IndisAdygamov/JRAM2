@@ -1,0 +1,26 @@
+{
+  "name": "Wolf",
+  "icon": "\uD83D\uDC3A",
+  "speed": 3,
+  "weight": 50.0,
+  "limitOnCell": 30,
+  "satiety": 50,
+  "foodThresholdForSatiate": 30,
+  "footMap": {
+    "Snake": 0,
+    "Fox": 0,
+    "Bear": 0,
+    "Eagle": 0,
+    "Horse": 10,
+    "Deer": 15,
+    "Rabbit": 60,
+    "Mouse": 80,
+    "Goat": 60,
+    "Sheep": 70,
+    "Boar": 15,
+    "Buffalo": 10,
+    "Duck": 40,
+    "Caterpillar": 0,
+    "Plan": 0
+  }
+}
