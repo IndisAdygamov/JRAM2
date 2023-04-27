@@ -1,0 +1,27 @@
+{
+  "name": "Fox",
+  "icon": "\uD83E\uDD8A",
+  "weight": 8.0,
+  "limitOnCell": 30,
+  "speed": 2,
+  "foodThresholdForSatiate": 2,
+  "satiety": 50,
+  "footMap": {
+    "Wolf": 0,
+    "Snake": 0,
+    "Fox": -1,
+    "Bear": 0,
+    "Eagle": 0,
+    "Horse": 0,
+    "Deer": 0,
+    "Rabbit": 70,
+    "Mouse": 90,
+    "Goat": 0,
+    "Sheep": 0,
+    "Boar": 0,
+    "Buffalo": 0,
+    "Duck": 60,
+    "Caterpillar": 40,
+    "Plan": 0
+  }
+}

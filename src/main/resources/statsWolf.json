@@ -1,12 +1,13 @@
 {
   "name": "Wolf",
   "icon": "\uD83D\uDC3A",
-  "speed": 3,
   "weight": 50.0,
   "limitOnCell": 30,
+  "speed": 3,
+  "foodThresholdForSatiate": 8,
   "satiety": 50,
-  "foodThresholdForSatiate": 30,
   "footMap": {
+    "Wolf": -1,
     "Snake": 0,
     "Fox": 0,
     "Bear": 0,

@@ -14,7 +14,7 @@ public class Main {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             wolf = objectMapper.readValue(
-                    new File("src/main/resources/parametersForWolf.json"), Wolf.class);
+                    new File("src/main/resources/statsWolf.json"), Wolf.class);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

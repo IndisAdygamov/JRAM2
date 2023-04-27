@@ -1,0 +1,27 @@
+{
+  "name": "Duck",
+  "icon": "\uD83E\uDD86",
+  "weight": 1,
+  "limitOnCell": 200,
+  "speed": 4,
+  "foodThresholdForSatiate": 15.0,
+  "satiety": 50,
+  "footMap": {
+    "Wolf": 0,
+    "Snake": 0,
+    "Fox": 0,
+    "Bear": 0,
+    "Eagle": 0,
+    "Horse": 0,
+    "Deer": 0,
+    "Rabbit": 0,
+    "Mouse": 0,
+    "Goat": 0,
+    "Sheep": 0,
+    "Boar": 0,
+    "Buffalo": 0,
+    "Duck": -1,
+    "Caterpillar": 90,
+    "Plan": 100
+  }
+}

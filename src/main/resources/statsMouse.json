@@ -1,0 +1,27 @@
+{
+  "name": "Mouse",
+  "icon": "\uD83D\uDC01",
+  "weight": 0.05,
+  "limitOnCell": 500,
+  "speed": 1,
+  "foodThresholdForSatiate": 0.01,
+  "satiety": 50,
+  "footMap": {
+    "Wolf": 0,
+    "Snake": 0,
+    "Fox": 0,
+    "Bear": 0,
+    "Eagle": 0,
+    "Horse": 0,
+    "Deer": 0,
+    "Rabbit": 0,
+    "Mouse": -1,
+    "Goat": 0,
+    "Sheep": 0,
+    "Boar": 0,
+    "Buffalo": 0,
+    "Duck": 0,
+    "Caterpillar": 90,
+    "Plan": 100
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Horse",
+  "icon": "\uD83D\uDC0E",
+  "weight": 400.0,
+  "limitOnCell": 20,
+  "speed": 4,
+  "foodThresholdForSatiate": 60,
+  "satiety": 50,
+  "footMap": {
+    "Wolf": 0,
+    "Snake": 0,
+    "Fox": 0,
+    "Bear": 0,
+    "Eagle": 0,
+    "Horse": -1,
+    "Deer": 0,
+    "Rabbit": 0,
+    "Mouse": 0,
+    "Goat": 0,
+    "Sheep": 0,
+    "Boar": 0,
+    "Buffalo": 0,
+    "Duck": 0,
+    "Caterpillar": 0,
+    "Plan": 100
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Rabbit",
+  "icon": "\uD83D\uDC07",
+  "weight": 2.0,
+  "limitOnCell": 150,
+  "speed": 2,
+  "foodThresholdForSatiate": 0.45,
+  "satiety": 50,
+  "footMap": {
+    "Wolf": 0,
+    "Snake": 0,
+    "Fox": 0,
+    "Bear": 0,
+    "Eagle": 0,
+    "Horse": 0,
+    "Deer": 0,
+    "Rabbit": -1,
+    "Mouse": 0,
+    "Goat": 0,
+    "Sheep": 0,
+    "Boar": 0,
+    "Buffalo": 0,
+    "Duck": 0,
+    "Caterpillar": 0,
+    "Plan": 100
+  }
+}
