@@ -8,7 +8,7 @@ import java.util.Map;
 @Getter
 @Setter
 @NoArgsConstructor
-public abstract class Animal extends Resident implements Movable, Eatable, Reproducible {
+public abstract class Animal extends Resident {
     private int satiety;
     private int foodThresholdForSatiate;
 
@@ -22,4 +22,7 @@ public abstract class Animal extends Resident implements Movable, Eatable, Repro
                 ", mapEating=" + footMap +
                 "} " + super.toString();
     }
+
+    public abstract void move();
+    public abstract void eat();
 }

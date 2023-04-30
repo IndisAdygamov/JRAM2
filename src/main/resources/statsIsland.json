@@ -1,0 +1,22 @@
+{
+  "sizeX": 4,
+  "sizeY": 4,
+  "residentsOnStart" : {
+    "Wolf": 15,
+    "Snake": 15,
+    "Fox": 15,
+    "Bear": 3,
+    "Eagle": 10,
+    "Horse": 10,
+    "Deer": 10,
+    "Rabbit": 75,
+    "Mouse": 250,
+    "Goat": 70,
+    "Sheep": 70,
+    "Boar": 25,
+    "Buffalo": 5,
+    "Duck": 100,
+    "Caterpillar": 500,
+    "Plant": 100
+  }
+}

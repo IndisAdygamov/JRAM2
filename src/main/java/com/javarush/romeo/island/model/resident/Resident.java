@@ -1,5 +1,6 @@
 package com.javarush.romeo.island.model.resident;
 
+import com.javarush.romeo.island.CellPlace;
 import lombok.*;
 
 @NoArgsConstructor
@@ -21,4 +22,6 @@ public abstract class Resident {
         this.weight = weight;
         this.limitOnCell = limitOnCell;
     }
+
+    public abstract Resident reproduce();
 }

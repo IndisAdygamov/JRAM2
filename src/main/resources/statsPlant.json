@@ -1,0 +1,7 @@
+{
+  "name": "Plant",
+  "icon": "\uD83D\uDC1B",
+  "weight": 1.0,
+  "limitOnCell": 200,
+  "speed": null
+}
