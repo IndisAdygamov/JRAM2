@@ -14,13 +14,15 @@ public abstract class Resident {
     private int speed;
     private double weight;
     private int limitOnCell;
+    private CellPlace cellPlace;
 
-    public Resident(String name, String icon, int speed, double weight, int limitOnCell) {
+    public Resident(String name, String icon, int speed, double weight, int limitOnCell, CellPlace cellPlace) {
         this.name = name;
         this.icon = icon;
         this.speed = speed;
         this.weight = weight;
         this.limitOnCell = limitOnCell;
+        this.cellPlace = cellPlace;
     }
 
     public abstract Resident reproduce();

@@ -5,17 +5,18 @@ import java.util.Random;
 public class Direction {
 
     static int selectDirection() {
-        return new Random().nextInt(Direct.values().length);
+        //return new Random().nextInt(Direct.values().length);
+        return new Random().nextInt(4);
     }
 
     private enum Direct {
         NORTH,
-        NORTH_EAST,
         EAST,
-        SOUTHEAST,
         SOUTH,
-        SOUTHWEST,
         WEST,
+        NORTH_EAST,
+        SOUTHEAST,
+        SOUTHWEST,
         NORTHWEST
     }
 }
