@@ -9,11 +9,6 @@ public class Wolf extends Predator {
     }
 
     @Override
-    public void move() {
-        System.out.printf("========== Logs: %s - moves ==========", this.getName());
-    }
-
-    @Override
     public Resident reproduce() {
         System.out.printf("========== Logs: %s - reproduces ==========", this.getName());
         return new Wolf();

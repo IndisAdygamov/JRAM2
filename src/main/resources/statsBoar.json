@@ -2,7 +2,7 @@
   "name": "Boar",
   "icon": "\uD83D\uDC17",
   "weight": 400.0,
-  "limitOnCell": 50,
+  "limitOnSector": 50,
   "speed": 2,
   "foodThresholdForSatiate": 50.0,
   "satiety": 50,

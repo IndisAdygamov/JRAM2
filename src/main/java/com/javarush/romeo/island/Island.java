@@ -1,14 +1,14 @@
 package com.javarush.romeo.island;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.javarush.romeo.island.model.resident.Resident;
 import com.javarush.romeo.island.model.resident.ResidentLoaderUtil;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 import java.util.Map;
 
 
@@ -21,13 +21,11 @@ public class Island {
     private Integer sizeY;
     private Map<String, Integer> residentsOnStart;
 
-    //List<CellPlace> cells = new ArrayList<>();
-    CellPlace[][] cells;
-
+    FilledSector[][] filledSectors;
 
     public void init() {
         loadStats();
-        createCells();
+        createSectors();
         spawnResidents();
     }
 
@@ -60,15 +58,15 @@ public class Island {
         System.out.printf("Island has size: x = %s, y = %s \n", island.sizeX, island.sizeY);
     }
 
-    private void createCells() {
+    private void createSectors() {
         System.out.print("Create cells: ");
         int countCells = 0;
 
-        cells = new CellPlace[island.sizeX][island.sizeY];
+        filledSectors = new FilledSector[island.sizeX][island.sizeY];
 
         for(int i = 0; i < island.sizeX; i++) {
             for (int j = 0; j < island.sizeY; j++) {
-                cells[i][j]=new CellPlace(i, j);
+                filledSectors[i][j]=new FilledSector(i, j);
                 countCells++;
             }
         }
@@ -78,19 +76,32 @@ public class Island {
     private void spawnResidents() {
         int count = 0;
 
-       //for(CellPlace[] cell : cells) {
         for(int i = 0; i < island.sizeX; i++) {
             for(int j = 0; j < island.sizeY; j++) {
                 for (Map.Entry<String, Integer> map : island.residentsOnStart.entrySet()) {
                     for (int y = 0; y < map.getValue(); y++) {
-                        cells[i][j].addResident(ResidentLoaderUtil.loadFromJSON(map.getKey()));
+                        Resident resident = ResidentLoaderUtil.loadFromJSON(map.getKey());
+                        resident.setSector(new Sector(i,j));
+                        filledSectors[i][j].addResident(resident);
                         count++;
                     }
                 }
 
-                System.out.println(cells[i][j].getCounterOfResidents().toString());
+                System.out.println(filledSectors[i][j].getCounterOfResidents().toString());
             }
         }
         System.out.println("Spawned " + count + " residents");
+    }
+
+    void islandLive() {
+        Arrays.stream(filledSectors).forEach(a-> Arrays.stream(a).toList().forEach(FilledSector::sectorLive));
+    }
+
+    public void islandPrintShortStatus() {
+        for (int i = 0; i < island.sizeX; i++) {
+            for (int j = 0; j < island.sizeY; j++) {
+                filledSectors[i][j].sectorPrintShortStatus();
+            }
+        }
     }
 }

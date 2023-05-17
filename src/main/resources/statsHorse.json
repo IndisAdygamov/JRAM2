@@ -2,7 +2,7 @@
   "name": "Horse",
   "icon": "\uD83D\uDC0E",
   "weight": 400.0,
-  "limitOnCell": 20,
+  "limitOnSector": 20,
   "speed": 4,
   "foodThresholdForSatiate": 60,
   "satiety": 50,

@@ -2,7 +2,7 @@
   "name": "Eagle",
   "icon": "\uD83E\uDD85",
   "weight": 6.0,
-  "limitOnCell": 20,
+  "limitOnSector": 20,
   "speed": 3,
   "foodThresholdForSatiate": 1,
   "satiety": 50,

@@ -1,38 +1,23 @@
 package com.javarush.romeo.island.model.resident.animals.actions.moving;
 
-import com.javarush.romeo.island.CellPlace;
 import com.javarush.romeo.island.Island;
-import com.javarush.romeo.island.model.resident.Resident;
+import com.javarush.romeo.island.Sector;
+import com.javarush.romeo.island.model.resident.animals.Animal;
 
 import java.util.Random;
 
 public class Moving {
 
-    void move(Resident resident) {
+    public static void move(Animal resident) {
         int direction = Direction.selectDirection();
-        int x = resident.getCellPlace().getX();
-        int y = resident.getCellPlace().getY();
+        int x = resident.getSector().getX();
+        int y = resident.getSector().getY();
         int newX = x;
         int newY = y;
         int distance = new Random().nextInt(resident.getSpeed());
 
         switch(direction) {
             case 1 -> { //North - Up
-//                if(y == 0) {
-//                    distance = 0;
-//                }
-//                else if(y == 1) {
-//                    distance = distance > 1 ? 1 : distance;
-//                }
-//                else if (y == 2) {
-//                    distance = distance > 2 ? 2 : distance;
-//                }
-//                else if (y == 3) {
-//                    distance = distance > 3 ? 3 : distance;
-//                }
-//                else if (y >= 4) {
-//                    distance = distance > 4 ? 4 : distance;
-//                }
                 distance = Math.min(distance, y);
                 newY -= distance;
             }
@@ -64,7 +49,23 @@ public class Moving {
             default -> {
             }
         }
-        //Island.getInstance().getCells()[newX][newY].getResidentList().
 
+        //проверка на возможность перехода в новый сектор
+        int limitOnSector = resident.getLimitOnSector();
+        int onSector = Island.
+                getInstance().
+                  getFilledSectors()[newX][newY].
+                getCounterOfResidents().
+                get(resident.getName());
+
+        if(onSector < limitOnSector) {
+            Island.getInstance().getFilledSectors()[x][y].removeResident(resident);
+            resident.setSector(new Sector(newX, newY));
+            Island.getInstance().getFilledSectors()[newX][newY].addResident(resident);
+        }
+        else
+            System.out.printf("%s - %s not moved from [%s][%s] to [%s][%s], because the limit is full",
+                    resident.getId(), resident.getName(), x, y, resident.getSector().getX(), resident.getSector().getY());
+        resident.setMovedStatus(true);
     }
 }

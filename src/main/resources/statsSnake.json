@@ -2,7 +2,7 @@
   "name": "Snake",
   "icon": "\uD83D\uDC0D",
   "weight": 15.0,
-  "limitOnCell": 30,
+  "limitOnSector": 30,
   "speed": 1,
   "foodThresholdForSatiate": 3,
   "satiety": 50,

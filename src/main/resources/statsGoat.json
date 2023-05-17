@@ -2,7 +2,7 @@
   "name": "Goat",
   "icon": "\uD83D\uDC10",
   "weight": 60.0,
-  "limitOnCell": 140,
+  "limitOnSector": 140,
   "speed": 3,
   "foodThresholdForSatiate": 10.0,
   "satiety": 50,

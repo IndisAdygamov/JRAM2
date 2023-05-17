@@ -9,11 +9,6 @@ public class Rabbit extends Herbivore{
     }
 
     @Override
-    public void move() {
-
-    }
-
-    @Override
     public void eat() {
 
     }

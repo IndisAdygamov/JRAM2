@@ -9,11 +9,6 @@ public class Boar extends Omnivore {
     }
 
     @Override
-    public void move() {
-        System.out.printf("========== Logs: %s - moves ==========", this.getName());
-    }
-
-    @Override
     public Resident reproduce() {
         System.out.printf("========== Logs: %s - reproduces ==========", this.getName());
         return new Boar();

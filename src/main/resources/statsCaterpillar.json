@@ -2,7 +2,7 @@
   "name": "Caterpillar",
   "icon": "\uD83D\uDC1B",
   "weight": 0.01,
-  "limitOnCell": 1000,
+  "limitOnSector": 1000,
   "speed": 0,
   "foodThresholdForSatiate": 0,
   "satiety": 50,

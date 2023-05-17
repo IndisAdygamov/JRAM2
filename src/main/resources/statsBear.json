@@ -2,7 +2,7 @@
   "name": "Bear",
   "icon": "\uD83D\uDC3B",
   "weight": 500.0,
-  "limitOnCell": 5,
+  "limitOnSector": 5,
   "speed": 2,
   "foodThresholdForSatiate": 80,
   "satiety": 50,

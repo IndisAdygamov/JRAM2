@@ -2,7 +2,7 @@
   "name": "Fox",
   "icon": "\uD83E\uDD8A",
   "weight": 8.0,
-  "limitOnCell": 30,
+  "limitOnSector": 30,
   "speed": 2,
   "foodThresholdForSatiate": 2,
   "satiety": 50,

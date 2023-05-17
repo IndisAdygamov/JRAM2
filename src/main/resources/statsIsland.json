@@ -1,6 +1,6 @@
 {
-  "sizeX": 4,
-  "sizeY": 4,
+  "sizeX": 2,
+  "sizeY": 2,
   "residentsOnStart" : {
     "Wolf": 15,
     "Snake": 15,

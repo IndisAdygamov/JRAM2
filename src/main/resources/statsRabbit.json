@@ -2,7 +2,7 @@
   "name": "Rabbit",
   "icon": "\uD83D\uDC07",
   "weight": 2.0,
-  "limitOnCell": 150,
+  "limitOnSector": 150,
   "speed": 2,
   "foodThresholdForSatiate": 0.45,
   "satiety": 50,

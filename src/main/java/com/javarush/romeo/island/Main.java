@@ -7,6 +7,9 @@ public class Main {
 
         Island island = Island.getInstance();
         island.init();
-
+        for (int i = 0; i < 2; i++) {
+            System.out.println("Step " + i+1);
+            island.islandLive();
+        }
     }
 }

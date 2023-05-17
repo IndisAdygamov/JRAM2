@@ -2,7 +2,7 @@
   "name": "Buffalo",
   "icon": "\uD83D\uDC03",
   "weight": 700.0,
-  "limitOnCell": 10,
+  "limitOnSector": 10,
   "speed": 3,
   "foodThresholdForSatiate": 100.0,
   "satiety": 50,

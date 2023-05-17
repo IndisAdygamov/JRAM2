@@ -1,6 +1,6 @@
 package com.javarush.romeo.island.model.resident;
 
-import com.javarush.romeo.island.CellPlace;
+import com.javarush.romeo.island.Sector;
 import lombok.*;
 
 @NoArgsConstructor
@@ -13,16 +13,16 @@ public abstract class Resident {
     private String icon;
     private int speed;
     private double weight;
-    private int limitOnCell;
-    private CellPlace cellPlace;
+    private int limitOnSector;
+    private Sector sector;
 
-    public Resident(String name, String icon, int speed, double weight, int limitOnCell, CellPlace cellPlace) {
+    public Resident(String name, String icon, int speed, double weight, int limitOnSector, Sector sector) {
         this.name = name;
         this.icon = icon;
         this.speed = speed;
         this.weight = weight;
-        this.limitOnCell = limitOnCell;
-        this.cellPlace = cellPlace;
+        this.limitOnSector = limitOnSector;
+        this.sector = sector;
     }
 
     public abstract Resident reproduce();

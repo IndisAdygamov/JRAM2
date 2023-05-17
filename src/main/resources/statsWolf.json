@@ -2,7 +2,7 @@
   "name": "Wolf",
   "icon": "\uD83D\uDC3A",
   "weight": 50.0,
-  "limitOnCell": 30,
+  "limitOnSector": 30,
   "speed": 3,
   "foodThresholdForSatiate": 8,
   "satiety": 50,
